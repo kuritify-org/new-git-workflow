@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.3.0](https://github.com/kuritify-org/new-git-workflow/compare/v0.2.0...v0.3.0) (2025-04-03)
+
+
+### Features
+
+* kuri ([#13](https://github.com/kuritify-org/new-git-workflow/issues/13)) ([976c532](https://github.com/kuritify-org/new-git-workflow/commit/976c532cbd290fee33a28e5859e0190d65363d3d))
+* nex gen ([#14](https://github.com/kuritify-org/new-git-workflow/issues/14)) ([015b8b1](https://github.com/kuritify-org/new-git-workflow/commit/015b8b1641393d3967c425300727d23eddc7d838))
+* save ([1746871](https://github.com/kuritify-org/new-git-workflow/commit/17468714c292f12b7bb9ca5a8d5b87e5b1b19d5b))
+
+
+### Bug Fixes
+
+* hoge ([#9](https://github.com/kuritify-org/new-git-workflow/issues/9)) ([17238bf](https://github.com/kuritify-org/new-git-workflow/commit/17238bf29502bf6c651bb84391843b2e7021564c))
+* save ([#12](https://github.com/kuritify-org/new-git-workflow/issues/12)) ([aebe2ee](https://github.com/kuritify-org/new-git-workflow/commit/aebe2ee75284df46c07f44d397042f15869f09a5))
+* workflow ([4cbbfcd](https://github.com/kuritify-org/new-git-workflow/commit/4cbbfcdfa7e6d8ab708a0c1766cc562d8f934d03))
+* workflow ([#15](https://github.com/kuritify-org/new-git-workflow/issues/15)) ([f2b7ab3](https://github.com/kuritify-org/new-git-workflow/commit/f2b7ab3aa5f5a02bbb2f9a01e563e2e7d4ae93fa))
+* workflow ([#16](https://github.com/kuritify-org/new-git-workflow/issues/16)) ([5892f6c](https://github.com/kuritify-org/new-git-workflow/commit/5892f6c1c25048400a4b9f2a2e3956a73b29a0a1))
+
 ## [0.2.0](https://github.com/kuritify-org/new-git-workflow/compare/v0.1.0...v0.2.0) (2025-04-03)
 
 
