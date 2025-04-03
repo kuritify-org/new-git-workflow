@@ -9,9 +9,6 @@ permissions:
   contents: write
   pull-requests: write
 
-env:
-  BASE_BRANCH: ${{ github.ref_name }}
-
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -31,8 +28,6 @@ jobs:
       - name: release-please
         uses: googleapis/release-please-action@v4
         id: release
-        with:
-          target-branch: ${{ env.BASE_BRANCH }}
 
       - name: release-please status
         run: echo "release_created=${{steps.release.outputs.release_created}}" >> "$GITHUB_OUTPUT"
