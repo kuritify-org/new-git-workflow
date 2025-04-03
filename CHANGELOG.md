@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/kuritify-org/new-git-workflow/compare/v0.1.0...v0.2.0) (2025-04-03)
+
+
+### Features
+
+* greenday ([#1](https://github.com/kuritify-org/new-git-workflow/issues/1)) ([9fad928](https://github.com/kuritify-org/new-git-workflow/commit/9fad928e1fa0a7e81ed3827ed97a06bbfa337d76))
+
 ## [0.16.1](https://github.com/Shintaro-Kurihara-Ktc/new-git-workflow-2/compare/v0.16.0...v0.16.1) (2025-04-02)
 
 
