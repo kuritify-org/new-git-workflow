@@ -66,11 +66,11 @@ jobs:
      
       # ターゲットはいつも本番
       - name: diff
-        run: APP_ENV=$__APP_ENV npx nx affected --verbose --target diff --base=refs/tags/"${LATEST_RELEASE_TAG}" --head=remotes/origin/main"      
+        run: APP_ENV=$__APP_ENV npx nx affected --verbose --target diff --base=refs/tags/"${LATEST_RELEASE_TAG}" --head=remotes/origin/main     
 
 
       # ターゲットはいつも本番
       - name: deploy
-        run: APP_ENV=$__APP_ENV npx nx affected --verbose --target deploy --base=refs/tags/"${LATEST_RELEASE_TAG}" --head=remotes/origin/main"      
+        run: APP_ENV=$__APP_ENV npx nx affected --verbose --target deploy --base=refs/tags/"${LATEST_RELEASE_TAG}" --head=remotes/origin/main
         if: ${{ needs.release.outputs.release_created }}
      
