@@ -1,6 +1,9 @@
 name: Continuous Integration
 
 on:
+  push:
+    branches:
+    - release-please--branches--main
   pull_request:
     branches:
     - main
@@ -24,8 +27,8 @@ env:
 
 jobs:
   ci:
-    if: |
-      !contains(github.event.pull_request.labels.*.name, 'autorelease: pending')
+    #if: |
+    #  !contains(github.event.pull_request.labels.*.name, 'autorelease: pending')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
