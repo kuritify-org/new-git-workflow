@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.0](https://github.com/kuritify-org/new-git-workflow/compare/v0.2.0...v0.3.0) (2025-04-03)
+
+
+### Features
+
+* save ([1746871](https://github.com/kuritify-org/new-git-workflow/commit/17468714c292f12b7bb9ca5a8d5b87e5b1b19d5b))
+
+
+### Bug Fixes
+
+* hoge ([#9](https://github.com/kuritify-org/new-git-workflow/issues/9)) ([17238bf](https://github.com/kuritify-org/new-git-workflow/commit/17238bf29502bf6c651bb84391843b2e7021564c))
+* workflow ([4cbbfcd](https://github.com/kuritify-org/new-git-workflow/commit/4cbbfcdfa7e6d8ab708a0c1766cc562d8f934d03))
+
 ## [0.2.0](https://github.com/kuritify-org/new-git-workflow/compare/v0.1.0...v0.2.0) (2025-04-03)
 
 
