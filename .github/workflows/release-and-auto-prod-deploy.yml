@@ -5,13 +5,15 @@ on:
     branches:
       - main
 
+defaults:
+  run:
+    shell: bash
+
 permissions:
   contents: write
   pull-requests: write
   issues: write
-
-env:
-  BASE_BRANCH: ${{ github.ref_name }}
+  checks: write
 
 jobs:
   release:
@@ -29,15 +31,22 @@ jobs:
         run: |
           echo "latest_release_tag=$(git tag | grep -E '^v[0-9]+[.][0-9]+[.][0-9]+$' | sort -V | tail -n 1)" >> "$GITHUB_OUTPUT"
 
+
       - name: release-please
         uses: googleapis/release-please-action@v4
         id: release
         with:
-          target-branch: ${{ env.BASE_BRANCH }}
+          target-branch: main
 
       - name: release-please status
         run: echo "release_created=${{steps.release.outputs.release_created}}" >> "$GITHUB_OUTPUT"
 
+  ci:
+    needs: release
+    runs-on: ubuntu-latest
+    steps:
+      - name: for status check
+        run: echo "always success for status check rule"
   auto-deploy:
     needs: release
     runs-on: ubuntu-latest
@@ -57,11 +66,11 @@ jobs:
      
       # ターゲットはいつも本番
       - name: diff
-        run: APP_ENV=$__APP_ENV npx nx affected --verbose --target diff --base=refs/tags/"${LATEST_RELEASE_TAG}" --head=remotes/origin/"${BASE_BRANCH}"      
+        run: APP_ENV=$__APP_ENV npx nx affected --verbose --target diff --base=refs/tags/"${LATEST_RELEASE_TAG}" --head=remotes/origin/main"      
 
 
       # ターゲットはいつも本番
       - name: deploy
-        run: APP_ENV=$__APP_ENV npx nx affected --verbose --target deploy --base=refs/tags/"${LATEST_RELEASE_TAG}" --head=remotes/origin/"${BASE_BRANCH}"      
+        run: APP_ENV=$__APP_ENV npx nx affected --verbose --target deploy --base=refs/tags/"${LATEST_RELEASE_TAG}" --head=remotes/origin/main"      
         if: ${{ needs.release.outputs.release_created }}
      
