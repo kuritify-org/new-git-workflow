@@ -3,7 +3,7 @@ name: Continuous Integration
 on:
   push:
     branches:
-    - release-please--branches--main
+      - release-please--branches--main
   pull_request:
     branches:
     - main
