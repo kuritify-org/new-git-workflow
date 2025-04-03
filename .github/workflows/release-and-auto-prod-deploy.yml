@@ -47,8 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: for status check
-        run: echo "alwais success for status check rule"
-
+        run: echo "always success for status check rule"
   auto-deploy:
     needs: release
     runs-on: ubuntu-latest
