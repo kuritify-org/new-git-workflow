@@ -39,7 +39,7 @@ jobs:
       - name: Checkout and Push 'hotfix/base'
         run: |
           git checkout -b hotfix/base "${LATEST_RELEASE_TAG}"
-          git push origin hotfix/base
+          git push -f origin hotfix/base
   
       - name: setup runtime
         uses: ./.github/actions/setup/
