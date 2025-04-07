@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.3.0](https://github.com/kuritify-org/new-git-workflow/compare/v2.2.1...v2.3.0) (2025-04-07)
+
+
+### Features
+
+* aiueo ([48a3be2](https://github.com/kuritify-org/new-git-workflow/commit/48a3be2b8ba819409d463794e505578dc4f97150))
+* fga ([e21735f](https://github.com/kuritify-org/new-git-workflow/commit/e21735fceafe58e4df6b11300242c05fd56bcb73))
+* fix ([2b7053d](https://github.com/kuritify-org/new-git-workflow/commit/2b7053dd6ceca61587228694a3ce7f4a9f92653e))
+
+
+### Bug Fixes
+
+* fuga ([4f3b57d](https://github.com/kuritify-org/new-git-workflow/commit/4f3b57d038b2d29f15439fff5bf9ae60a6a344df))
+* hoge ([5f54844](https://github.com/kuritify-org/new-git-workflow/commit/5f548443e670178ee1f3cc71447f21deb6a4049f))
+
 ## [2.2.1](https://github.com/kuritify-org/new-git-workflow/compare/v2.2.0...v2.2.1) (2025-04-07)
 
 
