@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.1](https://github.com/kuritify-org/new-git-workflow/compare/v2.4.0...v2.4.1) (2025-04-07)
+
+
+### Bug Fixes
+
+* fuga ([#30](https://github.com/kuritify-org/new-git-workflow/issues/30)) ([bacbb61](https://github.com/kuritify-org/new-git-workflow/commit/bacbb61350372d366f63364393ebd6021920bb3e))
+
 ## [2.4.0](https://github.com/kuritify-org/new-git-workflow/compare/v2.3.0...v2.4.0) (2025-04-07)
 
 
