@@ -15,10 +15,23 @@ jobs:
   finish-hotfix:
     runs-on: ubuntu-latest
     steps:
+      - name: Generate a Git App installe token
+        id: generate-token
+        uses: actions/create-github-app-token@v1.12.0
+        with:
+          app-id: ${{ vars.GH_APP_ID }}
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+          owner: "${{ github.repository_owner }}"
+         # repositories: ${{ github.repository }}
+#          repositories: new-git-workflow
+          repositories: ${{ github.event.repository.name }}
+
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: hotfix/base
+          token: ${{ steps.generate-token.outputs.token }}
+          persist-credentials: true
+
 
       - name: setup runtime
         uses: ./.github/actions/setup/
@@ -27,7 +40,8 @@ jobs:
       - name: destroy
         run: APP_ENV=$__APP_ENV npx nx run-many --verbose --target destroy --all
 
+
 #      # GitHub rule setsのrestriction deletionとの組み合わせにと生合成がつかなくなる
-#      - name: delete hotfix/base branch
-#        run: git push origin --delete hotfix/base
+      - name: delete hotfix/base branch
+        run: git push origin --delete hotfix/base
 
