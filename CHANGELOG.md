@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.2.0](https://github.com/kuritify-org/new-git-workflow/compare/v2.1.0...v2.2.0) (2025-04-07)
+
+
+### Features
+
+* fix ([3df09cb](https://github.com/kuritify-org/new-git-workflow/commit/3df09cb45fd2505c430a0c763fef864d4d22b61e))
+* fuga ([e0e06c2](https://github.com/kuritify-org/new-git-workflow/commit/e0e06c2d54a30752cea9ba7cabdb81a62129e38d))
+* kuri ([#21](https://github.com/kuritify-org/new-git-workflow/issues/21)) ([a4fbcda](https://github.com/kuritify-org/new-git-workflow/commit/a4fbcdaec35aae706fe2aec2d0ca492a49b5d378))
+
 ## [0.3.0](https://github.com/kuritify-org/new-git-workflow/compare/v0.2.0...v0.3.0) (2025-04-03)
 
 
