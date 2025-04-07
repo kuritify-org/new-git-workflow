@@ -38,9 +38,10 @@ jobs:
         with:
           app-id: ${{ vars.GH_APP_ID }}
           private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
-          #owner: "${{ github.repository_owner }}"
+          owner: "${{ github.repository_owner }}"
          # repositories: ${{ github.repository }}
-          repositories: kuritifi-org/new-git-workflow
+          repositories:
+            - new-git-workflow
 
       - name: release-please
         uses: googleapis/release-please-action@v4
