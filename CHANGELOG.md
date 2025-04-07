@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/kuritify-org/new-git-workflow/compare/v2.2.0...v2.2.1) (2025-04-07)
+
+
+### Bug Fixes
+
+* ream ([8a89528](https://github.com/kuritify-org/new-git-workflow/commit/8a89528dfb13c5a9e96cb6eceee883f693a8d31b))
+
 ## [2.2.0](https://github.com/kuritify-org/new-git-workflow/compare/v2.1.0...v2.2.0) (2025-04-07)
 
 
